@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Task</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto; 
+            gap: 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid-item
+        {
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-sizing: border-box; 
+        }
+
+        
+        @media screen and (max-width: 550px) {
+            .grid-container {
+                
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Box 1</h2>
+            <p>This is the first box in our grid layout.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Box 2</h2>
+            <p>This is the second box.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Box 3</h2>
+            <p>This is the third box.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Box 4</h2>
+            <p>This is the fourth and final box.</p>
+        </div>
+    </div>
+
+</body>
+</html>
